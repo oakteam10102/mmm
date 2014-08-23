@@ -4,6 +4,12 @@
 <% if user_signed_in? %>
   Welcome <%= current_user.first_name %> <%= current_user.last_name %>
   <%= button_to  'logout', destroy_user_session_path, method: :delete %>
+
+  <% @links.each do |link| %>
+
+  <%= link_to link.title, link.url %> <br>
+
+  <% end %>
 <% else %>
   <%= link_to 'Sign Up!', new_user_registration_path %> or
   <%= link_to 'Login', new_user_session_path %>

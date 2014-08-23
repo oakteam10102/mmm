@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  week: 1.5
+  release_date: 2014-08-24
+  title: MyString
+  url: MyString
+  shown: false
+
+two:
+  week: 1.5
+  release_date: 2014-08-24
+  title: MyString
+  url: MyString
+  shown: false
